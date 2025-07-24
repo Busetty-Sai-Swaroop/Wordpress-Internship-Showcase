@@ -12,4 +12,4 @@ front-end and back-end skills.
 - **Portfolio Site** – Personal profile page
 - **KS Badminton** – Coaching & pricing site
 
-> View all sites live from the [GitHub Pages link](#) or individual links listed in the index.
+> View all sites live from the https://busetty-sai-swaroop.github.io/Wordpress-Internship-Showcase/
