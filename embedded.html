@@ -45,13 +45,6 @@
       color: #555;
     }
 
-    .intro {
-      text-align: center;
-      margin-top: 18px;
-      font-size: 14px;
-      color: #444;
-    }
-
     .container {
       max-width: 1000px;
       margin: auto;
@@ -75,7 +68,7 @@
 
     .badge {
       display: inline-block;
-      background: #ff6a88;
+      background: #13a89e;
       color: white;
       font-size: 11px;
       font-weight: 600;
@@ -91,7 +84,7 @@
     }
 
     .tags {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .tag {
@@ -147,35 +140,58 @@
 
 <header>
   <h1>Embedded Projects</h1>
-  <p>IoT, Microcontroller & Hardware-Based Systems</p>
+  <p>IoT, Microcontroller & Hardware-Integrated Systems</p>
 </header>
-
-<div class="intro">
-  Hands-on embedded and IoT projects demonstrating real-world hardware–software integration.
-</div>
 
 <div class="container">
 
-  <!-- Water Level Monitoring -->
+  <!-- Smart Weather Monitoring System -->
+  <div class="card">
+    <span class="badge">IoT & Cloud</span>
+    <h2>Smart Weather Monitoring System</h2>
+
+    <div class="tags">
+      <span class="tag">ESP32</span>
+      <span class="tag">DHT22</span>
+      <span class="tag">Adafruit IO</span>
+    </div>
+
+    <p>
+      An IoT-based embedded system that monitors temperature and humidity using ESP32 and integrates with cloud services for real-time visualization and alerts.
+    </p>
+
+    <ul>
+      <li>Sensor data simulation using Wokwi</li>
+      <li>Cloud data publishing via MQTT</li>
+      <li>Threshold-based email alerts</li>
+    </ul>
+
+    <a class="github-btn"
+       href="https://github.com/Busetty-Sai-Swaroop/Smart-Weather-Monitoring-System"
+       target="_blank">
+      GitHub Repository
+    </a>
+  </div>
+
+  <!-- Water Level Monitoring System -->
   <div class="card">
     <span class="badge">Embedded System</span>
     <h2>Water Level Monitoring System</h2>
 
     <div class="tags">
+      <span class="tag">Microcontroller</span>
       <span class="tag">Sensors</span>
       <span class="tag">Embedded C</span>
-      <span class="tag">Microcontroller</span>
     </div>
 
     <p>
-      A microcontroller-based system designed to monitor and indicate water levels in tanks,
-      helping prevent overflow and improve water management.
+      A microcontroller-based embedded system designed to monitor and indicate water levels in storage tanks.
     </p>
 
     <ul>
-      <li>Real-time water level detection</li>
-      <li>Prevents overflow conditions</li>
-      <li>Low-cost embedded design</li>
+      <li>Water level detection</li>
+      <li>Overflow prevention logic</li>
+      <li>Efficient water management</li>
     </ul>
 
     <a class="github-btn"
@@ -185,9 +201,9 @@
     </a>
   </div>
 
-  <!-- Door Lock System -->
+  <!-- Embedded Door Lock System -->
   <div class="card">
-    <span class="badge">Security System</span>
+    <span class="badge">Embedded Security</span>
     <h2>Embedded Door Lock System (8051 MCU)</h2>
 
     <div class="tags">
@@ -197,47 +213,17 @@
     </div>
 
     <p>
-      A secure door locking system implemented using the 8051 microcontroller with PIN
-      verification to control access.
+      A secure embedded door lock system using an 8051 microcontroller with PIN-based authentication.
     </p>
 
     <ul>
-      <li>PIN-based authentication</li>
-      <li>Microcontroller-driven logic</li>
-      <li>Basic embedded security concepts</li>
+      <li>PIN verification logic</li>
+      <li>Microcontroller-based security</li>
+      <li>Embedded system design</li>
     </ul>
 
     <a class="github-btn"
        href="https://github.com/Busetty-Sai-Swaroop/Embedded-Door-Lock-System-with-PIN-Verification-using-8051-MCU"
-       target="_blank">
-      GitHub Repository
-    </a>
-  </div>
-
-  <!-- Weather Monitoring -->
-  <div class="card">
-    <span class="badge">IoT Project</span>
-    <h2>Smart Weather Monitoring System</h2>
-
-    <div class="tags">
-      <span class="tag">IoT</span>
-      <span class="tag">Sensors</span>
-      <span class="tag">ESP / MCU</span>
-    </div>
-
-    <p>
-      An IoT-based system to monitor environmental parameters such as temperature and humidity
-      using sensors and microcontrollers.
-    </p>
-
-    <ul>
-      <li>Real-time environmental monitoring</li>
-      <li>Sensor-based data collection</li>
-      <li>Scalable IoT architecture</li>
-    </ul>
-
-    <a class="github-btn"
-       href="https://github.com/Busetty-Sai-Swaroop/Smart-Weather-Monitoring-System"
        target="_blank">
       GitHub Repository
     </a>
