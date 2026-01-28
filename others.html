@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Other Projects | Busetty Sai Swaroop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #f6d365, #fbc2eb, #a6c1ee);
+      background-size: 400% 400%;
+      animation: warmGradient 20s ease infinite;
+      color: #333;
+    }
+
+    @keyframes warmGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: #ffffffcc;
+      backdrop-filter: blur(10px);
+      padding: 25px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      color: #4a4a4a;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .intro {
+      text-align: center;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e57c23;
+      color: white;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .tags {
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #f1f1f1;
+      color: #555;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin: 3px 4px 3px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 18px;
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .github-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 14px;
+      background: #24292e;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .back {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .back a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Other Projects</h1>
+  <p>Web & Software Solutions from Internships & Academic Work</p>
+</header>
+
+<div class="intro">
+  A collection of full-stack and automation projects built during internships, workshops, and coursework.
+</div>
+
+<div class="container">
+
+  <!-- Hospital Billing Management System -->
+  <div class="card">
+    <span class="badge">Web App</span>
+    <h2>Hospital Billing Management System</h2>
+
+    <div class="tags">
+      <span class="tag">Java</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">Web App</span>
+    </div>
+
+    <p>
+      A comprehensive system for managing hospital billing, patient details, and transaction records.
+    </p>
+
+    <ul>
+      <li>Manage patients & billing</li>
+      <li>Database integration</li>
+      <li>Clean UI & workflow</li>
+    </ul>
+
+    <a class="github-btn"
+       href="https://github.com/Busetty-Sai-Swaroop/HOSPITAL-BILLING-MANAGEMENT-SYSTEM"
+       target="_blank">
+      GitHub Repository
+    </a>
+  </div>
+
+  <!-- Automated Attendance Tracking -->
+  <div class="card">
+    <span class="badge">Automation</span>
+    <h2>Automated Attendance Tracking via Power Automate</h2>
+
+    <div class="tags">
+      <span class="tag">Power Automate</span>
+      <span class="tag">Microsoft Teams</span>
+      <span class="tag">Excel</span>
+    </div>
+
+    <p>
+      A workflow automation that tracks attendance and availability via Microsoft Teams responses.
+    </p>
+
+    <ul>
+      <li>Adaptive Card integration</li>
+      <li>Attendance status tracking</li>
+      <li>Automated logging & updates</li>
+    </ul>
+
+    <a class="github-btn"
+       href="https://github.com/Busetty-Sai-Swaroop/Automated-Attendance-Availability-Tracking-via-Teams-Using-Microsoft-Power-Automate"
+       target="_blank">
+      GitHub Repository
+    </a>
+  </div>
+
+  <!-- Volunteer Management System -->
+  <div class="card">
+    <span class="badge">Web App</span>
+    <h2>Volunteer Management System</h2>
+
+    <div class="tags">
+      <span class="tag">React.js</span>
+      <span class="tag">Java</span>
+      <span class="tag">MySQL</span>
+    </div>
+
+    <p>
+      A complete web application for managing volunteers, events, and schedules — built with a full-stack architecture.
+    </p>
+
+    <ul>
+      <li>Volunteer registration & login</li>
+      <li>Event assignment & status</li>
+      <li>Admin & user dashboards</li>
+    </ul>
+
+    <a class="github-btn"
+       href="https://github.com/Busetty-Sai-Swaroop/VOLUNTEER-MANAGEMENT-SYSTEM---Web-APPLICATION"
+       target="_blank">
+      GitHub Repository
+    </a>
+  </div>
+
+</div>
+
+<div class="back">
+  <a href="index.html">⬅ Back to Portfolio</a>
+</div>
+
+</body>
+</html>
