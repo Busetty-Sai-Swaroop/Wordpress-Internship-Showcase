@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Busetty Sai Swaroop | WordPress Projects</title>
+  <title>WordPress Projects | Busetty Sai Swaroop</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       font-family: 'Poppins', sans-serif;
@@ -21,167 +20,244 @@
     }
 
     @keyframes warmGradient {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     header {
       background-color: #ffffffcc;
       backdrop-filter: blur(10px);
-      padding: 30px 0 10px;
+      padding: 25px 0;
       text-align: center;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     header h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 30px;
       color: #4a4a4a;
     }
 
     header p {
-      margin: 5px 0 15px;
-      font-size: 16px;
+      margin: 6px 0 12px;
+      font-size: 15px;
       color: #555;
     }
 
-    .bio {
+    .header-button a {
+      display: inline-block;
+      padding: 9px 18px;
+      background: linear-gradient(45deg, #ff9a8b, #ff6a88, #ff99ac);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .header-button a:hover {
+      background: linear-gradient(45deg, #f75d59, #f7797d, #ff92a9);
+    }
+
+    .intro {
       text-align: center;
-      margin: 20px auto 0;
-      max-width: 700px;
-      font-size: 15px;
-      color: #333;
-      padding: 0 20px;
+      margin-top: 18px;
+      font-size: 14px;
+      color: #444;
     }
 
     .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px 20px;
-      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
 
     .card {
       background: white;
-      border-radius: 12px;
-      text-align: left;
-      padding: 20px;
-      width: 280px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #4a90e2;
+      color: white;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      margin-bottom: 10px;
     }
 
     .card h2 {
-      font-size: 20px;
+      font-size: 18px;
+      margin-bottom: 8px;
       color: #333;
+    }
+
+    .tags {
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #f1f1f1;
+      color: #555;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin: 3px 4px 3px 0;
     }
 
     .card p {
       font-size: 14px;
-      color: #555;
-      margin-bottom: 15px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 10px;
     }
 
-    .card a {
+    ul {
+      padding-left: 18px;
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .visit-btn {
       display: inline-block;
-      padding: 10px 15px;
+      margin-top: 8px;
+      padding: 8px 14px;
       background: #4a90e2;
       color: white;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
+      font-size: 13px;
+      font-weight: 600;
     }
 
-    .card a:hover {
-      background: #3578c3;
+    .back {
+      text-align: center;
+      margin-bottom: 30px;
     }
 
-    @media (max-width: 600px) {
-      .card {
-        width: 90%;
-      }
+    .back a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
     }
-    .header-button {
-  margin-top: 10px;
-}
-
-.header-button a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #ff9a8b;
-  background: linear-gradient(45deg, #ff9a8b, #ff6a88, #ff99ac);
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.header-button a:hover {
-  background: linear-gradient(45deg, #f75d59, #f7797d, #ff92a9);
-}
-
   </style>
 </head>
+
 <body>
-  <header>
-  <h1>Busetty Sai Swaroop</h1>
-  <p>busettysaiswaroop@gmail.com | B.Tech CSE – IoT | WordPress Projects</p>
+
+<header>
+  <h1>WordPress Projects</h1>
+  <p>WooCommerce, CMS & Responsive Web Solutions</p>
   <div class="header-button">
-    <a href="https://drive.google.com/drive/folders/1GnDYbXsynapuFA7zW5mTKqhrcVRIse-S?usp=sharing" target="_blank">View Certificates</a>
+    <a href="https://drive.google.com/drive/folders/1GnDYbXsynapuFA7zW5mTKqhrcVRIse-S?usp=sharing" target="_blank">
+      View Certificates
+    </a>
   </div>
-  </header>
+</header>
 
-  <div class="bio">
-  Aspiring web developer skilled in HTML, CSS, JavaScript, and MySQL, with a strong interest in WordPress.  
-  Passionate about creating responsive, scalable WordPress solutions and contributing to real-world enterprise projects.
+<div class="intro">
+  WordPress-based projects focusing on e-commerce, portfolios, and service-oriented websites.
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <span class="badge">E-Commerce</span>
+    <h2>Freestore – Clothing Shop</h2>
+    <div class="tags">
+      <span class="tag">WordPress</span>
+      <span class="tag">WooCommerce</span>
+      <span class="tag">Clothing</span>
+    </div>
+    <p>A clothing-focused e-commerce demo showcasing modern apparel.</p>
+    <ul>
+      <li>Product catalog & checkout</li>
+      <li>Responsive UI</li>
+    </ul>
+    <a class="visit-btn" href="https://freestore.kesug.com/" target="_blank">Visit Website</a>
   </div>
 
-  <div class="container">
-
-    <div class="card">
-      <h2>Freestore – Clothing Shop</h2>
-      <p>A demo is a clothing e-commerce site showcasing trendy apparel and a smooth WooCommerce shopping experience.</p>
-      <a href="https://freestore.kesug.com/" target="_blank">Visit Site</a>
+  <div class="card">
+    <span class="badge">E-Commerce</span>
+    <h2>Trendverse – Trending Products</h2>
+    <div class="tags">
+      <span class="tag">WooCommerce</span>
+      <span class="tag">Products</span>
+      <span class="tag">WordPress</span>
     </div>
-
-    <div class="card">
-      <h2>Trendverse | Sample E-Commerce Site</h2>
-      <p>A demo e-commerce site built with WooCommerce, featuring product listings and a seamless shopping cart experience.</p>
-      <a href="https://trendverse.kesug.com/" target="_blank">Visit Site</a>
-    </div>
-
-    <div class="card">
-      <h2>Portfolio Profile | Demo Site</h2>
-      <p>A personal portfolio showcasing web development skills, projects, and experience with a modern, responsive design.</p>
-      <a href="http://portfolioprofile.wuaze.com/" target="_blank">Visit Site</a>
-    </div>
-
-    <div class="card">
-      <h2>Custom Shop | Demo Site</h2>
-      <p>CustomShop is a clothing demo featuring customizable apparel and a clean shopping experience powered by WooCommerce.</p>
-      <a href="https://customshop.kesug.com/" target="_blank">Visit Site</a>
-    </div>
-
-    <div class="card">
-      <h2>Badminton Training Hub | Demo Site</h2>
-      <p>Is An Sample academy website showcasing training plans, pricing details, and location information for aspiring badminton players.</p>
-      <a href="https://ksbadminton.netlify.app/" target="_blank">Visit Site</a>
-    </div>
-
+    <p>Trending product aggregation platform across multiple categories.</p>
+    <ul>
+      <li>Category-based browsing</li>
+      <li>User-friendly layout</li>
+    </ul>
+    <a class="visit-btn" href="https://trendverse.kesug.com/" target="_blank">Visit Website</a>
   </div>
+
+  <div class="card">
+    <span class="badge">Portfolio</span>
+    <h2>Portfolio Profile Site</h2>
+    <div class="tags">
+      <span class="tag">Portfolio</span>
+      <span class="tag">Responsive</span>
+    </div>
+    <p>Personal portfolio to showcase skills and projects.</p>
+    <ul>
+      <li>Profile & skills sections</li>
+      <li>Project showcase</li>
+    </ul>
+    <a class="visit-btn" href="http://portfolioprofile.wuaze.com/" target="_blank">Visit Website</a>
+  </div>
+
+  <div class="card">
+    <span class="badge">E-Commerce</span>
+    <h2>Custom Shop – Clothing Demo</h2>
+    <div class="tags">
+      <span class="tag">Customization</span>
+      <span class="tag">WooCommerce</span>
+    </div>
+    <p>Customizable apparel store demo.</p>
+    <ul>
+      <li>Custom product options</li>
+      <li>Mobile-friendly</li>
+    </ul>
+    <a class="visit-btn" href="https://customshop.kesug.com/" target="_blank">Visit Website</a>
+  </div>
+
+  <div class="card">
+    <span class="badge">Service</span>
+    <h2>Badminton Training Hub</h2>
+    <div class="tags">
+      <span class="tag">Service</span>
+      <span class="tag">Information</span>
+    </div>
+    <p>Training plans, pricing, and location details.</p>
+    <ul>
+      <li>Plans & pricing</li>
+      <li>Location info</li>
+    </ul>
+    <a class="visit-btn" href="https://ksbadminton.netlify.app/" target="_blank">Visit Website</a>
+  </div>
+
+</div>
+
+<div class="back">
+  <a href="index.html">⬅ Back to Portfolio</a>
+</div>
+
 </body>
 </html>
